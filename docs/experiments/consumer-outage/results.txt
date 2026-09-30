@@ -1,0 +1,27 @@
+Experiment: Consumer Outage and Queue Backlog Recovery
+
+Date: 2026-09-30
+
+Queue: payment-queue
+
+Scenario:
+The Payment Service consumer was temporarily unavailable while
+messages remained in the SQS queue.
+
+Initial backlog:
+Approximately 100 messages.
+
+Observed recovery:
+~100 messages
+~80 messages
+~20 messages
+0 messages
+
+Result:
+After the Payment Service consumer was restored, the accumulated
+messages were progressively processed and the queue returned to
+zero messages.
+
+Conclusion:
+The experiment demonstrated asynchronous buffering and backlog
+recovery through the SQS-based communication path.

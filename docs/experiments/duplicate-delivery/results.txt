@@ -1,0 +1,20 @@
+Experiment: SQS Duplicate Delivery
+
+Queue: payment-queue
+
+Visibility timeout: 5 seconds
+Processing duration: 15 seconds
+Messages received: 3
+
+SQS MessageId:
+3e5920d9-40d0-4442-9c1c-e8726c10215a
+
+SNS MessageId:
+7b2c55fc-6eb8-417f-ae14-c1f17da99b72
+
+Application eventId:
+f7e953f7-f4fd-4c86-b182-1b1628e7b3bd
+
+Result:
+The same event was delivered to the consumer three times
+before successful message deletion.

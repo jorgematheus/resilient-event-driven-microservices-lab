@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+spring:
+  task:
+    scheduling:
+      pool:
+        size: 2
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics
